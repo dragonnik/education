@@ -1,87 +1,118 @@
 body{
-    background-color: #e2e2e2;
+    background-color: #F0F0F0;
+    margin: 0;
+    width: 100%;
 }
+.bold{
+    font-weight: 700;
+}
+
 /*Blog1*/
-.maindiv1{
+.blog_basket{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    height: 6%;
-    border-bottom: 0.6vw solid #d9d9d9;
+    height: 50px;
+    border-bottom: 0.6vw solid #F0F0F0;
     background-color: white;
-    padding: 0 15px 0;
     margin: auto;
 }
-#img1{
-    width: 5%;
-    margin-left: 2%;
+.arrow_area{
+    width: 10%;
+    display: flex;
+    justify-content: center;
 }
-#text1{
-    font-family: Calibri, sans-serif;
-    font-weight: bold;
-    font-size: 7vw;
+#arrow{
+    width: 13px;
+    height: 22px;
+    margin-left: 15px;
+}
+.basket_area{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+#basket{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    width: 68px;
+    height: 22px;
+    line-height: 20px;
     flex: 1;
     text-align: center;
-    margin-right: 50px;
 }
 /**/
 
 /*Blog2*/
-.maindiv2{
+.blog_delivery{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 10%;
+    height: 65px;
     justify-content: flex-start;
     align-items: center;
     background-color: white;
-    padding: 0 15px 0;
     margin: auto;
 }
-.img2{
-    width: 12%;
-    height: auto;
+.truck_area{
+    display: flex;
+    width: 67.5px;
+    justify-content: center;
 }
-.text2{
-    font-size: 5vw;
-    font-family: Calibri, sans-serif;
-    text-align: center;
+.truck{
+    width: 36px;
+    height: 36px;
+}
+.delivery{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     flex: 1;
-    margin-right: 15%;
 }
 /**/
 
 /*Blog3*/
-.div2{
+.blog_product{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    height: 8%;
+    height: 50px;
 }
-.text3{
-    font-family: Calibri, sans-serif;
-    font-size: 4.5vw;
+.total_products{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
     flex: 1;
-    margin-left: 2%;
+    margin-left: 15px;
+    height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
 }
-.text4{
-    font-family: Calibri, sans-serif;
-    font-size: 4.5vw;
+.total_price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    flex: 1;
     text-align: right;
-    flex: 1;
-    margin-right: 2%;
+    margin-right: 15px;
+    height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
 }
 /**/
 
 /*Blog4*/
-.maindiv3{
+.blog_product1{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -89,8 +120,138 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     background-color: white;
-    padding: 50px 15px 50px;
+    padding: 17px 0 0;
     margin: auto;
+    height: 128px;
+    border-bottom: 0.6vw solid #F0F0F0;
+}
+.first_area_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+}
+.subarea{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+}
+.info_area{
+    height: 130px;
+}
+.washer_area{
+    width: 145px;
+    display: flex;
+    justify-content: center;
+}
+.washer{
+    width: 55px;
+    height: 69px;
+}
+.washer_inform{
+    width: 60%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.washer_text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    height: 32px;
+    flex: 1;
+    margin-top: 2px;
+}
+.washer_podtext{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 4%;
+    flex: 1;
+}
+.washer_price{
+    font-family: 'Roboto', sans-serif;
+    height: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    flex: 1;
+    text-align: right;
+    margin-right: 15px;
+}
+.minus_area{
+    display: flex;
+    justify-content: flex-end;
+}
+.minus{
+    width: 34px;
+}
+.amount_area{
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    display: flex;
+
+}
+.amount{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+}
+.text6_2{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-right: 84px;
+}
+.png3{
+    width: 34px;
+    margin-right: 2%;
+    margin-top: 8px;
+}
+.text7{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #0089D0;
+    margin-top: 5%;
+    text-align: right;
+}
+/**/
+
+/*Blog5*/
+.maindiv3_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    padding: 17px 0 0;
+    margin: auto;
+    height: 198px;
+    border-bottom: 0.6vw solid #F0F0F0;
+}
+.poddiv3_1_1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 2%;
 }
 .poddiv3{
     width: 100%;
@@ -110,27 +271,36 @@ body{
     align-items: flex-start;
     background-color: white;
 }
-.png1{
-    width: 15%;
-    margin-right: 5%;
+.png1_1_1{
+    width: 68px;
+    height: 66px;
+    margin-left: 23px;
 }
-.text5{
-    font-family: Calibri, sans-serif;
-    font-size: 4vw;
+.text5_1_1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    height: 120px;
     flex: 1;
+    margin-left: 14px;
+    margin-top: 2px;
 }
-.podtext5{
-    font-family: Calibri, sans-serif;
-    font-size: 3.5vw;
+.podtext5_1_1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
     margin-top: 5%;
     flex: 1;
 }
-.text6{
-    font-family: Calibri, sans-serif;
-    font-size: 5vw;
+.text6_1_1{
+    font-family: 'Roboto', sans-serif;
+    height: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
     flex: 1;
     text-align: right;
-    margin-right: 5%;
+    margin-right:4%;
 }
 .poddiv3_1{
     width: 100%;
@@ -142,84 +312,69 @@ body{
     background-color: white;
 }
 .png2{
-    width: 9%;
+    width: 34px;
     margin-right: 2%;
-    margin-left: 16%;
+    margin-left: 90px;
+    margin-top: 8px;
 }
 .text6_1{
-    font-family: Calibri, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 6vw;
+    font-style: normal;
+    font-size: 17px;
     margin-right: 2%;
-    margin-top: 1%;
+    margin-top: 14px;
 }
 .text6_2{
-    font-size: 4vw;
-    font-family: Calibri, sans-serif;
-    margin-top: 2%;
-    margin-right: 19%;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-right: 84px;
 }
 .png3{
-    width: 9%;
-    margin-right: 5%;
+    width: 34px;
+    margin-right: 2%;
+    margin-top: 8px;
 }
 .text7{
-    font-family: Calibri, sans-serif;
-    font-size: 5.5vw;
-    color: #1ac6ff;
-    margin-top: 2%;
-}
-/**/
-
-/*Blog5*/
-/*Same code with Blog4*/
-.poddiv3_1_1{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 50%;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: white;
-    margin-top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #0089D0;
+    margin-top: 5%;
+    text-align: right;
 }
 /**/
 
 /*Blog6*/
-.maindiv4{
-    width: 102%;
-    height: 10%;
+.but{
+    width: 100%;
+    height: 64px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0 0 0;
-    margin-top: 5%;
-}
-.but{
-    width: 100%;
-    height: 100%;
+    margin-top: 22px;
     border: none;
     border-radius: none;
-    background-color: #4d94ff;
+    background-color: #0089D0;
 }
 .text8{
-    font-family: Calibri, sans-serif;
-    font-size: 5vw; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px; 
     color: white
 }
 .podtext8{
-    font-family: Calibri, sans-serif;
-    font-size: 4vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
     color: white
 }
 /**/
 
 /*Blog7*/
 .maindiv5{
-    width: 102%;
-    height: 8%;
+    width: 100%;
+    height: 49px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -239,16 +394,77 @@ body{
     background-color: white;
 }
 .png4{
-    width: 60%;
+    width: 25px;
 }
 .text9{
-    font-family: Calibri, sans-serif; 
-    font-size: 3vw; 
-    color: #bebebe;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 10px; 
+    color: #A8A8A8;
+    padding-top: 4px;
+}
+/**/
+/*2*/
+.poddiv5_2{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.png4_2{
+    width: 33px;
+}
+.text9_2{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 10px; 
+    color: #A8A8A8;
+    padding-top: 4px;
+}
+/**/
+/*3*/
+.poddiv5_3{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.png4_3{
+    width: 25px;
+}
+.text9_3{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 10px; 
+    color: #A8A8A8;
+    padding-top: 4px;
+}
+/**/
+/*4*/
+.poddiv5_4{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.png4_4{
+    width: 27px;
+}
+.text9_4{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 10px; 
+    color: #A8A8A8;
+    padding-top: 4px;
 }
 /**/
 /*5*/
-.poddiv5_1{
+.poddiv5_5{
     width: 18%;
     display: flex;
     flex-direction: column;
@@ -257,8 +473,14 @@ body{
     align-items: center;
     background-color: white;
 }
-.png4_1{
-    width: 40%;
+.png4_5{
+    width: 19px;
+}
+.text9_5{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 10px; 
+    color: #A8A8A8;
+    padding-top: 4px;
 }
 /**/
 /**/

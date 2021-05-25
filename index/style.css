@@ -122,14 +122,14 @@ body{
     background-color: white;
     padding: 17px 0 0;
     margin: auto;
-    height: 128px;
+    height: auto;
     border-bottom: 0.6vw solid #F0F0F0;
 }
 .first_area_1{
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 50%;
+    height: 100%;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: white;
@@ -144,21 +144,33 @@ body{
     background-color: white;
 }
 .info_area{
-    height: 130px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.icons_area{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
 }
 .washer_area{
     width: 145px;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 .washer{
     width: 55px;
     height: 69px;
 }
 .washer_inform{
-    width: 60%;
+    width: 100%;
     display: flex;
-    height: 100%;
+    height: auto;
     flex-direction: row;
     justify-content: flex-start;
 }
@@ -167,40 +179,40 @@ body{
     font-size: 14px;
     font-style: normal;
     font-weight: normal;
-    height: 32px;
+    height: auto;
     flex: 1;
     margin-top: 2px;
+    width: 100%;
 }
 .washer_podtext{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-top: 4%;
     flex: 1;
+    height: auto;
+}
+.washer_price_delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 40%;
+    height: auto;
+
 }
 .washer_price{
     font-family: 'Roboto', sans-serif;
-    height: 20px;
+    height: auto;
     font-weight: normal;
     font-style: normal;
     font-size: 17px;
     flex: 1;
     text-align: right;
-    margin-right: 15px;
-}
-.minus_area{
-    display: flex;
-    justify-content: flex-end;
 }
 .minus{
     width: 34px;
 }
 .amount_area{
     width: 30px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 14px;
-    display: flex;
-
 }
 .amount{
     font-family: 'Roboto', sans-serif;
@@ -209,18 +221,18 @@ body{
     font-size: 17px;
     text-align: center;
 }
-.text6_2{
+.thing{
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
-    margin-top: 5%;
-    margin-right: 84px;
+    display: flex;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
 }
-.png3{
+.plus{
     width: 34px;
-    margin-right: 2%;
-    margin-top: 8px;
 }
-.text7{
+.delete{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #0089D0;

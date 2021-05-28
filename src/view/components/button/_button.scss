@@ -1,0 +1,24 @@
+
+@import '../palette';
+
+.but{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+    border: none;
+    border-radius: none;
+    background-color: $font-color-blue;
+    padding: 17px 0 17px;
+}
+.text8{
+    color: white
+}
+.podtext8{
+    font-size: 12px;
+    color: white
+}

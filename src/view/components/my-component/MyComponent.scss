@@ -1,4 +1,37 @@
-@import '/src/view/components/my-component/MyComponent.scss';
+
+@import '../palette.scss';
+
+$font-family: 'Roboto', sans-serif;
+$font-size-10px: 10px;
+$fz-base: 17px;
+// 
+$padding-top-4px: 4px;
+
+// 
+
+div {
+    font-family: $font-family;
+}
+
+.basket,
+.total_products,
+.total_price,
+.washer_price,
+.amount,
+.text8{
+    font-size: $fz-base;
+}
+
+.text9{
+    @extend %text-main;
+}
+
+%text-main {
+    font-size: $font-size-10px; 
+    color: $font-color-grey;
+    padding-top: $padding-top-4px;  
+}
+
 
 body{
     background-color: #F0F0F0;

@@ -22,8 +22,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 1,
-              modules: true
+              importLoaders: 1
             }
           }
         ],
@@ -36,6 +35,24 @@ module.exports = {
             name: 'images/[name].[contenthash:8].[ext]',
           },
         },
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
       },
     ]
   },

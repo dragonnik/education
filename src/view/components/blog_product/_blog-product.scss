@@ -1,0 +1,39 @@
+/*import*/
+@import '../palette.scss';
+@import '../padding.scss';
+@import '../size.scss';
+@import '../width.scss';
+@import '../template-selectors.scss';
+@import '../my-component/MyComponent.scss';
+/*import*/
+
+/*variable*/ 
+$font-family: 'Roboto', sans-serif;
+$border-bottom: 0.6vw solid $color-lightgrey;
+/*variable*/ 
+
+.blog_product{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: toVw(20);
+    padding: $padding-17-15-17-15;
+}
+.total_products{
+    flex: 1;
+    height: toVw(20);
+    font-style: normal;
+    font-weight: normal;
+    line-height: toVw(20);
+}
+.total_price{
+    flex: 1;
+    text-align: right;
+    height: toVw(20);
+    font-style: normal;
+    font-weight: normal;
+    line-height: toVw(20);
+}

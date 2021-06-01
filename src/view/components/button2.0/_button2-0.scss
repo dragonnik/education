@@ -1,0 +1,21 @@
+/*import*/
+@import '../palette.scss';
+@import '../padding.scss';
+@import '../size.scss';
+@import '../width.scss';
+@import '../template-selectors.scss';
+@import '../my-component/MyComponent.scss';
+/*import*/
+
+.button{
+    width: 100%;
+    height: toVw(113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: fixed;
+    bottom: toVw(10);
+    flex-direction: column;
+    padding: 0;
+}

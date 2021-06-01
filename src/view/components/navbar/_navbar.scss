@@ -1,0 +1,66 @@
+/*imports*/
+@import '../palette.scss';
+@import '../padding.scss';
+@import '../size.scss';
+@import '../width.scss';
+@import '../template-selectors.scss';
+@import '../my-component/MyComponent.scss';
+/*imports*/
+
+
+.maindiv5{
+    width: toVw(375);
+    height: toVw(49);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: $color-white;
+    margin: auto;
+}
+.poddiv5{
+    @extend %poddiv5;
+}
+/*1*/
+.png4{
+    width: toVw(25);
+}
+/**/
+/*2*/
+.png4_2{
+    width: toVw(33);
+}
+/**/
+/*3*/
+.png4_3{
+    width: toVw(25);
+}
+/**/
+/*4*/
+.basket_amount{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.png4_4{
+    width: toVw(24);
+}
+.png4_4_1{
+    width: toVw(14);
+    position: absolute;
+    margin-top: toVw(-5);
+    margin-right: toVw(-10);
+
+}
+.text9_4{
+    @extend %text-maindiv5;
+    color: $font-color-red;
+}
+/**/
+/*5*/
+.png4_5{
+    width: toVw(19);
+}
+/**/

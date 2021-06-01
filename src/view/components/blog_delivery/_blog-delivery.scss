@@ -1,0 +1,40 @@
+/*import*/
+@import '../palette.scss';
+@import '../padding.scss';
+@import '../size.scss';
+@import '../width.scss';
+@import '../template-selectors.scss';
+@import '../my-component/MyComponent.scss';
+/*import*/
+
+/*variable*/ 
+$font-family: 'Roboto', sans-serif;
+$border-bottom: 0.6vw solid $color-lightgrey;
+/*variable*/ 
+
+.blog_delivery{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: toVw(65);
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color-white;
+    margin: auto;
+}
+.truck_area{
+    display: flex;
+    width: toVw(67.5);
+    justify-content: center;
+}
+.truck{
+    width: toVw(36);
+    height: toVw(36);
+}
+.delivery{
+    font-size: toVw(14);
+    font-style: normal;
+    font-weight: normal;
+    flex: 1;
+}

@@ -1,0 +1,38 @@
+/*import*/
+@import '../palette.scss';
+@import '../padding.scss';
+@import '../size.scss';
+@import '../width.scss';
+@import '../template-selectors';
+@import '../my-component/MyComponent.scss';
+/*import*/
+
+.blog_basket{
+    width: toVw(375);
+    height: toVw(50);
+    border-bottom: $border-bottom;
+    background-color: $color-white;
+    margin: auto;
+    @extend %flex-row-wrap-flexstart-center;
+}
+.arrow_area{
+    width: toVw(47.5);
+    @extend %flex-center;
+}
+.arrow{
+    width: toVw(13);
+    height: toVw(22);
+}
+.basket_area{
+    @extend %flex-center;
+    width: toVw(310);
+}
+.basket{
+    font-weight: 500;
+    font-style: normal;
+    line-height: toVw(20);
+    flex: 1;
+    text-align: center;
+    margin-right: toVw(30);
+    font-family: $font-family;
+}

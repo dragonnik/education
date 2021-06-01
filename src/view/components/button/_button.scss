@@ -1,24 +1,35 @@
+/*import*/
+@import '../palette.scss';
+@import '../padding.scss';
+@import '../size.scss';
+@import '../width.scss';
+@import '../template-selectors.scss';
+@import '../my-component/MyComponent.scss';
+/*import*/
 
-@import '../palette';
+/*variable*/ 
+$font-family: 'Roboto', sans-serif;
+$border-bottom: 0.6vw solid $color-lightgrey;
+/*variable*/ 
 
 .but{
-    width: 100%;
-    height: auto;
+    width: toVw(375);
+    height: toVw(64);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 22px;
+    margin-top: toVw(20);
     border: none;
     border-radius: none;
     background-color: $font-color-blue;
-    padding: 17px 0 17px;
+    padding: toVw(17) 0 toVw(17);
 }
 .text8{
-    color: white
+    color: $color-white;
+    width: toVw(375);
 }
 .podtext8{
-    font-size: 12px;
-    color: white
+    font-size: toVw(12);
+    color: $color-white;
 }

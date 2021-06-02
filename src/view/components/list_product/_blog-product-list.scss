@@ -56,6 +56,13 @@ $border-bottom: 0.6vw solid $color-lightgrey;
     align-items: center;
     margin-top: 5%;
 }
+.book_area{
+    width: toVw(50);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0 toVw(26) 0 toVw(32);
+}
 .washer_area{
     width: toVw(50);
     display: flex;

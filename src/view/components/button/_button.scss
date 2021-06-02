@@ -14,7 +14,7 @@ $border-bottom: 0.6vw solid $color-lightgrey;
 
 .but{
     width: toVw(375);
-    height: toVw(64);
+    height: toVw(32);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,6 +28,7 @@ $border-bottom: 0.6vw solid $color-lightgrey;
 .text8{
     color: $color-white;
     width: toVw(375);
+    text-align: center;
 }
 .podtext8{
     font-size: toVw(12);

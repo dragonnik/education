@@ -26,23 +26,6 @@ import { NavBar } from '../components/navbar/NavBar.jsx'
 
 export { MyComponent } 
 
-
-// export class MyComponent {
-//     view() {
-//         return m("div", { name: "MyComponent"}, [
-//             m(Basket, { name: 'Корзина' }),
-//             m(Delivery, { name: 'бесплатной' }),
-//             m(Product, { name: '169 990тг' }),
-//             m(ProductsList, { name: 'SMARTY' }),
-            
-//             m(ContainerFixed, [
-//                 m(Button, { name: 'Продолжить' }),
-//                 m(NavBar, { name: 'Главная' }),
-//             ])
-//         ])
-//     }
-
-
 function MyComponent() {
     return{
         view: () => (
@@ -59,5 +42,4 @@ function MyComponent() {
         )
     }
 }
-
 m.mount(document.body, MyComponent)

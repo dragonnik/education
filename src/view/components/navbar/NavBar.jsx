@@ -38,4 +38,3 @@ function NavBar() {
         )
     }
 }
-m.mount(document.body, NavBar)

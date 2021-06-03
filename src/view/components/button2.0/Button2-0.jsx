@@ -12,4 +12,3 @@ function ContainerFixed() {
         )
     }
 }
-m.mount(document.body, ContainerFixed)

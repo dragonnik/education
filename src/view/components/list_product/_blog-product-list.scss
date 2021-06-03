@@ -12,7 +12,7 @@ $font-family: 'Roboto', sans-serif;
 $border-bottom: 0.6vw solid $color-lightgrey;
 /*variable*/ 
 
-.blog_product1{
+.product_list{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -25,7 +25,15 @@ $border-bottom: 0.6vw solid $color-lightgrey;
     height: auto;
     border-bottom: $border-bottom;
 }
-.first_area1{
+ul{
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+.main_area{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -61,7 +69,7 @@ $border-bottom: 0.6vw solid $color-lightgrey;
     display: flex;
     justify-content: center;
     height: 100%;
-    padding: 0 toVw(26) 0 toVw(32);
+    padding: 0 toVw(26) 0 toVw(30);
 }
 .washer_area{
     width: toVw(50);
@@ -69,6 +77,53 @@ $border-bottom: 0.6vw solid $color-lightgrey;
     justify-content: center;
     height: 100%;
     padding: 0 toVw(26) 0 toVw(24);
+}
+.ps_area{
+    width: toVw(50);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0 toVw(26) 0 toVw(24);
+}
+.s10_area{
+    width: toVw(50);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0 toVw(26) 0 toVw(24);
+}
+.ps5_area{
+    width: toVw(50);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0 toVw(26) 0 toVw(24);
+}
+.watchactive_area{
+    width: toVw(50);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0 toVw(26) 0 toVw(24);
+}
+.iphone11_area{
+    width: toVw(50);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0 toVw(26) 0 toVw(24);
+}
+.iphone11{
+    width: toVw(60)
+}
+.watchactive{
+    width: toVw(50);
+}
+.ps5{
+    width: toVw(50);
+}
+.s10{
+    width: toVw(50);
 }
 .washer{
     width: toVw(50);
@@ -78,14 +133,17 @@ $border-bottom: 0.6vw solid $color-lightgrey;
     width: toVw(43);
     height: toVw(66);
 }
-.washer_inform{
+.ps{
+    width: toVw(55);
+}
+.img_inform{
     width: 100%;
     display: flex;
     height: auto;
     flex-direction: row;
     justify-content: flex-start;
 }
-.washer_text{
+.prod_info{
     font-size: toVw(14);
     font-style: normal;
     font-weight: normal;
@@ -94,13 +152,13 @@ $border-bottom: 0.6vw solid $color-lightgrey;
     margin-top: toVw(2);
     width: 170px;
 }
-.washer_podtext{
+.name_company{
     font-size: toVw(12);
     margin-top: 4%;
     flex: 1;
     height: auto;
 }
-.washer_price_delete{
+.price_delete{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -115,7 +173,7 @@ $border-bottom: 0.6vw solid $color-lightgrey;
     flex: 1;
     width: 100%;
 }
-.washer_price{
+.price{
     height: 100%;
     font-weight: normal;
     font-style: normal;

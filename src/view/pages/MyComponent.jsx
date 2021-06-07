@@ -1,14 +1,6 @@
 import m from 'mithril';
 
 import '../components/my-component/MyComponent.scss'
-
-
-// import { Button } from '../components/button/ButtonComponent'
-// import { Delivery } from '../components/blog_delivery/BlogDelivery'
-// import { Product } from '../components/blog_product/BlogProduct'
-// import { ProductsList } from '../components/list_product/ProductsList'
-// import { NavBar } from '../components/navbar/NavBar';
-// import { ContainerFixed } from '../components/button2.0/Button2-0'
 import '../components/blog_basket/_blog-basket.scss'
 import '../components/blog_delivery/_blog-delivery.scss'
 import '../components/blog_product/_blog-product.scss'

@@ -2,30 +2,35 @@ import m from 'mithril'
 
 import './_blog-product-list.scss'
 import '../my-component/MyComponent.scss'
-import { FirstProduct } from './first_product/FirstProduct.jsx'
-import { SecondProduct } from './second_product/SecondProduct.jsx'
-import { ThirdProduct } from './third_product/ThirdProduct.jsx'
-import { FourthProduct } from './fourth_product/FourthProduct.jsx'
-import { FifthProduct } from './fifth_product/FifthProduct.jsx'
-import { SixthProduct } from './sixth_product/SixthProduct.jsx'
-import { SeventhProduct } from './seventh_product/SeventhProduct.jsx'
-export { ProductsList }
+import {Product} from './seventh_product/SeventhProduct.jsx'
 
-function ProductsList() {
-    return {
-        view: () => (
+export class ProductsList {
+
+    view (vnode) {
+        // const numbers = [...Array(10)]
+        // const ListItems = numbers.map((number) =>
+        //     <li key={ number.id }>
+        //         <Product/>
+        //     </li>
+        // )
+        this.prod = vnode.attrs.text
+        this.prod = posts.map((post) =>
+            <li key={ this.id }>
+                <Product/>
+            </li>
+        )
+        console.log(posts)
+        return  (
             <div>
                 <ul>
-                    <FirstProduct/>
-                    <SecondProduct/>
-                    <ThirdProduct/>
-                    <FourthProduct/>
-                    <FifthProduct/>
-                    <SixthProduct/>
-                    <SeventhProduct/>
+                    { this.prod }
                 </ul>
                 <div class='empty'></div>
             </div>
         )
     }
 }
+const posts = [
+    {id: 1, text:'Смартфон Apple'},
+    {id: 2, text: 'Игровая приставка'}
+]

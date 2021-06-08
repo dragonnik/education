@@ -8,12 +8,8 @@ import plus from "../../../../images/Plus Enabled.png"
 export class Product{
     constructor(vnode) {
         this.count = 0
-        this.content = vnode.attrs.text
-        this.content = posts.map((post) =>
-            <div key={ this.id }>
-                { this.content }
-            </div>
-        )
+        this.content = vnode.attrs.name
+        this.text = vnode.attrs.text
     }
     increment() {
         this.count +=1
@@ -31,7 +27,6 @@ export class Product{
         this.element.remove()
     }
     view(vnode) {
-        console.log(posts)
         return(
             <div class='product_list'>
                     <div class='main_area'>
@@ -41,8 +36,10 @@ export class Product{
                         <div class='subarea'>
                             <div class='info_area'>
                                 <div class='img_inform'>
-                                    <div class='prod_info' name='Product'>
-                                        { vnode.attrs.text }
+                                    <div class='prod_info'>
+                                        { this.content }
+                                        <br/>
+                                        { this.text }
                                     </div>
                                 </div>
                                 <div class='icons_area'>
@@ -70,7 +67,3 @@ export class Product{
         )   
     }
 }
-const posts = [
-    {id: 1, name: 'Product', text: 'Смартфон Apple'},
-    {id: 2, name: 'Product', text: 'Смартфон Apple'}
-]

@@ -5,25 +5,19 @@ import '../my-component/MyComponent.scss'
 import {Product} from './seventh_product/SeventhProduct.jsx'
 
 export class ProductsList {
-
-    view (vnode) {
-        // const numbers = [...Array(10)]
-        // const ListItems = numbers.map((number) =>
-        //     <li key={ number.id }>
-        //         <Product/>
-        //     </li>
-        // )
-        this.prod = vnode.attrs.text
-        this.prod = posts.map((post) =>
-            <li key={ this.id }>
-                <Product/>
-            </li>
-        )
+    view () {
         console.log(posts)
         return  (
             <div>
                 <ul>
-                    { this.prod }
+                    { posts.map((post) =>
+                        <li key={ post.id }>
+                            <Product name={ post.content } text={ post.text }>
+                                {this.content}
+                                {this.text}
+                            </Product>
+                        </li>
+                    )}
                 </ul>
                 <div class='empty'></div>
             </div>
@@ -31,6 +25,7 @@ export class ProductsList {
     }
 }
 const posts = [
-    {id: 1, text:'Смартфон Apple'},
-    {id: 2, text: 'Игровая приставка'}
+    {id: 1, content: 'Смартфон Apple', text: 'iPhone 11 128Gb Slim'},
+    {id: 2, content: 'Sony'},
+    {id: 3}
 ]

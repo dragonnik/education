@@ -1,0 +1,23 @@
+@import '../padding.scss';
+@import '../palette.scss';
+@import '../size.scss';
+@import '../template-selectors.scss';
+@import '../width.scss';
+
+.header{
+    width: 100%;
+    height: auto;
+}
+.nav_icon{
+    width: toVw(24);
+}
+.nav_panel{
+    width: toVw(100);
+    height: auto;
+    background-color: burlywood;
+    margin: -40px 0 0 -10px;
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}

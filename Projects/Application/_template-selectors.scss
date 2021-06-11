@@ -1,0 +1,38 @@
+@import './width.scss';
+
+$font-size-10px: toVw(10);
+$fz-base: toVw(17);
+
+
+%flex-column-center-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+%poddiv5{
+    @extend %flex-column-center-center;
+    width: $width-15prc;
+    height: toVw(49);
+    background-color: $color-white;
+}
+
+%text-maindiv5 {
+    font-size: $font-size-10px; 
+    color: $font-color-grey;
+    padding-top: $padding-top-4px;  
+}
+
+%flex-row-wrap-flexstart-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+}

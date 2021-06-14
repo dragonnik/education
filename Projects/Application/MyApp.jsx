@@ -1,12 +1,12 @@
 import m from 'mithril'
 
-import {Header} from './header/Header.jsx'
+import { NavBar } from './header/Header.jsx'
 
 export class Application{
     view() {
         return(
             <div>
-                <Header/>
+                <NavBar/>
             </div>
         )
     }

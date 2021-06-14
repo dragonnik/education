@@ -4,7 +4,7 @@ import './_header.scss'
 import navbar from '../images/hamburger.png'
 
 export class Header{
-    headerDom: HTMLElement;
+    // headerDom: HTMLElement;
     
     view() {
         return(

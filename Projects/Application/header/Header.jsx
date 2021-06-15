@@ -17,18 +17,11 @@ export class NavBar{
         } 
         return(
             <div>
-                <div class={ classNameForMenu }>
-                    <div class='app-menu'>
-                        
-                    </div>
-                </div>
                 <div class='layout'>
-                    <div class='header'>
-                        <div class='menu-icon' onclick = { () => {
-                            this.menuOpen = !this.menuOpen
-                            console.log(this.menuOpen)
-                        } }></div>
-                    </div>
+                    <iframe src='./index_01/' class='project1' height='667' width='375'>
+                    </iframe>
+                    <iframe src='./index_02/dist/index.html' width='375' height='667' class='project2'>                        
+                    </iframe>
                 </div>
             </div>
         )

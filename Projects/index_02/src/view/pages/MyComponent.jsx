@@ -16,11 +16,9 @@ import { ContainerFixed } from '../components/button2.0/Button2-0.jsx'
 import { Button } from '../components/button/ButtonComponent.jsx'
 import { NavBar } from '../components/navbar/NavBar.jsx'
 
-export { MyComponent } 
-
-function MyComponent() {
-    return{
-        view: () => (
+export class MyComponent {
+    view () {
+        return (
             <div>
                 <BlogBasket/>
                 <BlogDelivery/> 

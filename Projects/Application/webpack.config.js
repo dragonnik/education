@@ -7,6 +7,9 @@ module.exports = {
       index: './index.js',
     },
     devtool: 'inline-source-map',
+    devServer: {
+      contentBase: '../',
+    },
     plugins: [
       new HtmlWebpackPlugin({
        title: 'Development',
@@ -14,6 +17,10 @@ module.exports = {
     ],
     module: {
         rules: [
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
             {
                 test: /\.(jpe?g|png|gif)$/,
                 use: {

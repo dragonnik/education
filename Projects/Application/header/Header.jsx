@@ -1,14 +1,14 @@
 import m from 'mithril'
 
 import './_header.scss'
-import navbar from '../images/hamburger.png'
+import { Project1 } from '../pages/page_1/project_01.jsx'
 
 export class NavBar{
-    constructor(){
+    constructor(attrs){
         this.menuOpen = false
         this.menuClosed = false
     }
-    view() {
+    view(attrs) {
         let classmenuanimatable = ' menu--animatable';
         let classNameForMenu = 'menu'; 
         if (this.menuOpen) {
@@ -18,10 +18,12 @@ export class NavBar{
         return(
             <div>
                 <div class='layout'>
-                    <iframe src='./index_01/' class='project1' height='667' width='375'>
-                    </iframe>
-                    <iframe src='./index_02/dist/index.html' width='375' height='667' class='project2'>                        
-                    </iframe>
+                    <div class='navbar'>
+                        <div class='dev1'><a href='/'>HOME</a></div>
+                        <div class='dev1'><a href='/page1'>PAGE 1</a></div>
+                    </div>
+                    <div class='frame1'>
+                    </div>
                 </div>
             </div>
         )

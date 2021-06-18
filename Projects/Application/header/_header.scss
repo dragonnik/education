@@ -1,8 +1,9 @@
-@import '../padding.scss';
-@import '../palette.scss';
-@import '../size.scss';
-@import '../template-selectors.scss';
-@import '../width.scss';
+@import '../_padding.scss';
+@import '../_palette.scss';
+@import '../_size.scss';
+@import '../_template-selectors.scss';
+@import '../_width.scss';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
 
 iframe {
@@ -10,7 +11,13 @@ iframe {
   margin-top: toVw(20);
 }
 
-/* aux */
+.frame1 {
+  display: flex;
+  justify-content: center;
+  width: toVw(2900);
+  align-items: center;
+  
+}
 
 body {
   margin: 0;
@@ -20,9 +27,28 @@ body {
 
 .layout {
   width: 100%;
-  height: auto;
-  position: relative;
+  height: toVh(2160);
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.navbar {
+  width: toVw(1000);
+  height: toVh(1000);
+  height: auto;
+  background-color: #F75652;
+  box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding-top: toVw(5);
+}
+
+.dev1 {
+  font-size: toVw(80);
+  color: white;
+  padding-bottom: toVw(5);
+  border-bottom: solid toVw(5) white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 600;
+  letter-spacing: toVw(3);
 }

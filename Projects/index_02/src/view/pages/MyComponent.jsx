@@ -32,4 +32,4 @@ export class MyComponent {
         )
     }
 }
-m.mount(document.body, MyComponent)
+// m.mount(document.body, MyComponent)

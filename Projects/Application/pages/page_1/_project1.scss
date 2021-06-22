@@ -3,3 +3,10 @@
 @import '../../_size.scss';
 @import '../../_template-selectors.scss';
 @import '../../_width.scss';
+
+.frame1 {
+    display: flex;
+    justify-content: center;
+    width: toVw(2900);
+    align-items: center;
+}

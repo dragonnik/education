@@ -5,6 +5,19 @@
 @import '../_width.scss';
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
+body {
+  display: flex;
+  
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: -999;
+  opacity: 0.5;
+}
 
 iframe {
   border: none;
@@ -26,7 +39,7 @@ body {
 }
 
 .layout {
-  width: 100%;
+  width: toVw(1000);
   height: toVh(2160);
   display: flex;
   justify-content: flex-start;
@@ -37,18 +50,17 @@ body {
   width: toVw(1000);
   height: toVh(1000);
   height: auto;
-  background-color: #F75652;
+  background-color: #f7555288;
   box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.15);
   text-align: center;
-  padding-top: toVw(5);
 }
 
-.dev1 {
-  font-size: toVw(80);
-  color: white;
-  padding-bottom: toVw(5);
-  border-bottom: solid toVw(5) white;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 600;
-  letter-spacing: toVw(3);
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: toVw(15);
+  padding-bottom: toVw(15);
 }

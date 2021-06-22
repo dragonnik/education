@@ -1,0 +1,15 @@
+@import './_padding.scss';
+@import './_palette.scss';
+@import './_size.scss';
+@import './_template-selectors.scss';
+@import './_width.scss';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+.nav {
+    font-size: toVw(80);
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-decoration: none;
+    width: 100%;
+    border-bottom: solid toVw(2) white;
+}

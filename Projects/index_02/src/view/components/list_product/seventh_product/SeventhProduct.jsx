@@ -20,8 +20,8 @@ export class Product{
             this.count -=1
         }
     } 
-    remove() {
-        this.element = q
+    remove(el) {
+        this.element = el
         this.element.remove()
     }
     view({attrs}) {
@@ -54,7 +54,7 @@ export class Product{
                                     <div class='price'>{ attrs.price }</div>
                                 </div>
                                 <div class='delete_area'>
-                                    <div class='delete' onclick={ () => { this.remove() } }>Удалить</div>
+                                    <div class='delete' onclick={ () => { this.remove(this) } }>Удалить</div>
                                 </div>
                             </div>
                         </div>

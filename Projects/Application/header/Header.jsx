@@ -16,7 +16,6 @@ export class NavBar{
                         </nav>
                     </div>
                 </div>
-                
             </div>
         )
     }

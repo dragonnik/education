@@ -7,6 +7,12 @@
 .frame1 {
     display: flex;
     justify-content: center;
-    width: toVw(2900);
+    width: toVw(2800);
     align-items: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: toVw(2800);
 }

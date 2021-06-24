@@ -11,9 +11,10 @@ export class NavBar{
                 <div class='bg'></div>
                 <div class='layout'>
                     <div class='navbar'>
-                        <nav class='navigation'>
+                        {/* <nav class='navigation'>
                             { vnode.children }
-                        </nav>
+                        </nav> */}
+                        <div class="navigation">{vnode.children}</div>
                     </div>
                 </div>
             </div>

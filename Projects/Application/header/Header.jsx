@@ -14,7 +14,7 @@ export class NavBar{
                         {/* <nav class='navigation'>
                             { vnode.children }
                         </nav> */}
-                        <div class="navigation">{vnode.children}</div>
+                        <a class="navigation">{vnode.children}</a>
                     </div>
                 </div>
             </div>

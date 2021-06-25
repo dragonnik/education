@@ -4,7 +4,7 @@ import './pages/page_1/_project1.scss'
 export { posts }
 
 export class Project1 {
-    view({attrs}) {
+    view(vnode) {
         return(
            <div>
                <ul>
@@ -24,11 +24,10 @@ export class Project1 {
 
 const posts = [
     {
-        id: '1',
-        src: './index_01/',
+        src: './index_01/'
     },
     {
         id: '2',
-        src: '../../index_02/dist/',
+        src: '../../index_02/dist/'
     }
 ]
